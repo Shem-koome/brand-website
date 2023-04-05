@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title is here-->
+        <title>MILLIONAIRE ENTREPRISE</title>
+                        <!--linking to stylesheet-->
+        <link rel="stylesheet" href="brand.css" type="text/css">
+        <!--<link rel="stylesheet" href="brand1.css" type="text/css">-->
+        </head>
+    
+        <body>
+           <!--This is my header-->
+            <div class="header">
+                    <!--Here is a marquee-->
+            <marquee behavior="scroll" direction="left" scrollamount="20" >
+                WELCOME TO THE BEST ONLINE TECHIE OF YOUR CHOICE!
+            </marquee>
+
+                <div class="topleft">
+                <img src="/home/millionaire/Pictures/mm.png" alt="logo" width="140px" height="130px">
+                </div>
+                <h1>MILLIONAIRE ENTREPRISE</h1>
+            </div>
+            
+        
+            <!--login form-->
+            <div id="form">
+
+                <!--connect to php-->
+                <form action="index.php" method="get">
+
+                    <h2>Have Account Fill Login Form</h2>
+                    <hr>
+                    <!--avatar-->
+                    <div class="imgcontainer">
+                        <img src="/home/millionaire/Pictures/Avatar_2.png" alt="avatar" class="avatar">
+                    </div>
+
+                    <!--container username-->
+                    <div class="container">
+                        <label for="uname">
+                            <b>USERNAME</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <!--container password-->
+                        <label for="psw">
+                            <b>PASSWORD</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" id="myInput" name="psw" required>
+
+
+                        <!--Show password-->
+                        <input type="checkbox" 
+                        onclick="myfunction()">Show Password
+
+                        <!--javascript-->
+                        <script>
+                            function myfunction() {
+                                var x = 
+                                document.getElementById("myInput");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+
+                        <!--button-->
+                        <button 
+                        type="submit">Login</button>
+                        
+
+                        <!--checkbox remember me-->
+                        <label>
+                        <input type="checkbox"
+                        checked="checked"
+                        name="remember">Remember me
+                    </label>
+                    </div>
+
+                    <!--cancel button-->
+                    <div class="container" 
+                    style="background-color: #f1f1f1;">
+                    <button type="button"
+                    class="cancelbtn">Cancel</button>
+
+                    <!--forgot password-->
+                    <span class="psw">Forgot
+                        <a href="#">password?</a>
+                    </span>
+                </div>
+                </form>
+            </div>
+
+            <!--signup button-->
+            <a class="btn" href="signup.html" role="button">
+                signup
+            </a>         
+
+            
+
+            <!--This is the footer-->
+            <div class="footer">
+                <p>copyright &copy; 2023. All Rights Reserved 
+                    <br>&nbsp; &nbsp;&commat; ExcellenceBright</p>
+            </div>
+        </body>
+</html>

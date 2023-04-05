@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title is here-->
+        <title>MILLIONAIRE ENTREPRISE</title>
+                <!--linking to stylesheet-->
+             <link rel="stylesheet" href="brand1.css" type="text/css">
+        </head>
+        <body>
+           <!--This is my header-->
+            <div class="header">
+                    <!--Here is a marquee-->
+            <marquee behavior="scroll" direction="left" scrollamount="20" >
+                WELCOME TO THE BEST ONLINE TECHIE OF YOUR CHOICE!
+            </marquee>
+
+                <div class="topleft">
+                <img src="/home/millionaire/Pictures/mm.png" alt="logo" width="140px" height="140px">
+                </div>
+                <h1>MILLIONAIRE ENTREPRISE</h1>
+            </div>
+
+            <!--signup form-->
+                
+                <form action="index.php" method="post">
+
+                    <form class="modal-content" action="index.php">
+                        <div class="container">
+                            <h3>Fill Form To Create an Account</h3>
+                            <hr>
+                            <!--username-->
+                            <label for="username">
+                                <b>USERNAME</b>
+                            </label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                            <!--container for email-->
+                            <label for="email">
+                                <b>EMAIL</b>
+                            </label>
+                            <input type="email" placeholder="Enter Email" name="email" required>
+    
+                             <!--container password-->
+                             <label for="psw">
+                                <b>PASSWORD</b>
+                            </label>
+                            <input type="password" placeholder="Enter Password" id="password" name="psw" 
+                           title="Must contain at least one uppercase and 
+                            lowercase letter,a number and at least 8 or more" required>
+    
+                             <!--container repeat password-->
+                             <label for="psw-repeat">
+                                <b>CONFIRM PASSWORD</b>
+                            </label>
+                            <input type="password" placeholder="Confirm Password" id="confirm_password" name="psw-repeat" required>
+                           
+                           <!--Passwords valiation whether they march or not-->
+
+                           <script>
+                                var password = document.getElementById("password")
+                                , confirm_password = 
+                                document.getElementById("confirm_password");
+
+                                function validatepassword(){
+                                    if(password.value != confirm_password.value){
+                                        confirm_password.setCustomValidity("passwords Don't march");
+                                    } else {
+                                        confirm_password.setCustomValidity('');
+                                    }
+                                }
+                                password.onchange = validatepassword;
+                                confirm_password.onkeyup = validatepassword
+                            </script>
+                           
+    
+                            <!--Show password-->
+                            <input type="checkbox" 
+                            onclick="myfunction()">Show Password
+    
+                            <!--javascript-->
+                            <script>
+                                function myfunction() {
+                                    var x = 
+                                    document.getElementById("password");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+    
+                            <!--remember me check box-->
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"
+                                style="margin-bottom: 15px;">
+                                Remember me                        </label>
+    
+                            <!--terms and conditions-->
+                            <p>By creating an account you agree to our <a href="#"
+                                style="color: dodgerblue;">Terms & Conditions</a></p>
+    
+                                <!--cancel btn-->
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('idol').style.display='none'"
+                                class="cancelbtn" >Cancel</button>
+    
+    
+                                <!--submit button-->
+                                <button type="submit" class="signup">Sign Up</button>
+
+    
+    
+                            </div>
+    
+                        </div>
+                    </form>
+                    <!--</form>-->
+                </div>
+
+                <!--back button-->
+                <a class="btn" href="brand.html" role="button">
+                    Back
+                </a>         
+    
+<br>
+              <!--This is the footer-->
+              <div class="footer">
+                <p>copyright &copy; 2023. All Rights Reserved 
+                    <br>&nbsp; &nbsp;&commat; ExcellenceBright</p>
+            </div>
+        </body>
+</html>

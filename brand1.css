@@ -1,0 +1,166 @@
+body{
+    padding:0;
+    margin: 0;
+    background-color:white;
+}
+.header{
+    background-color: brown;
+    position: sticky;
+    top: 0;
+    padding: 7px;
+    height:98px;
+
+}
+
+.topleft {
+    position:fixed;
+    top: 0px;
+    left: 30px;
+    
+}
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+   position: fixed;
+    top: 0px;
+    left: 170px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+marquee{
+    font-size: 30px;
+    color: whitesmoke;
+    font-style: italic;
+    position: sticky;
+
+}
+
+/*Boadered form*/
+form{
+    border: 2px solid blue;
+    padding: 3px;
+    border-radius: 3px;
+    width: 25%;
+    margin: 15px auto;
+
+}
+
+/*ful-width input fields*/
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=confirm_password] {
+    width:100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    box-sizing: border-box;
+} 
+
+/*add backgroundcolor when inputs get focus*/
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus
+input[type=confirm_password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*set styles for all buttons*/
+button{
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    
+}
+.btn{
+    background-color: #04AA6d ;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    margin: auto;
+    width: 50px;
+    
+}
+
+h3{
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancel, .signupbtn{
+    float: right;
+    width: 50%;
+}
+
+.container {
+    padding: 2px;
+}
+
+
+hr{
+    border: 1px solid blue;
+    margin-bottom:  3px;
+}
+
+
+/*clear floats*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:300px) {
+    .cancelbtn, .signupbtn {
+        width: 50%;
+    }
+    
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 901px) {
+    .header h1{
+      font-size: 70px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 900px) {
+    .header h1 {
+      font-size: 40px;
+    }
+  }
+
+
+.footer{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+    height: 40px;
+}
